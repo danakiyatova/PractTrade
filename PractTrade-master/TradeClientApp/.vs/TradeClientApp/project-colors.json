@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0f9278af-d79e-4020-ae27-7cf4434e7b71": {
+      "ProjectGuid": "0f9278af-d79e-4020-ae27-7cf4434e7b71",
+      "DisplayName": "TradeClientApp",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
