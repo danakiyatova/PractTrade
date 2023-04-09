@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TradeClientApp.ViewModel;
 
 namespace TradeClientApp.View.Windows
 {
@@ -22,6 +23,7 @@ namespace TradeClientApp.View.Windows
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new Appvm();
         }
     }
 }

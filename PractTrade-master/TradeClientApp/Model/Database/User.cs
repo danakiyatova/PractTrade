@@ -15,13 +15,12 @@ namespace TradeClientApp.Model.Database
     public partial class User
     {
         public int UserID { get; set; }
-        public string UserSurname { get; set; }
-        public string UserName { get; set; }
-        public string UserPatronymic { get; set; }
+        public int UserInfo { get; set; }
         public string UserLogin { get; set; }
         public string UserPassword { get; set; }
         public int UserRole { get; set; }
     
         public virtual Role Role { get; set; }
+        public virtual UserInfo UserInfo1 { get; set; }
     }
 }

@@ -50,7 +50,7 @@ namespace TradeClientApp.ViewModel
             {
                 
                 ButtonSignIn = "Подождите...";
-                using (var context = new TradeDBEntities1())
+                using (var context = new TradeDBEntities())
                 {
                     var user = await context.User.FirstOrDefaultAsync(u => u.UserLogin == _login && u.UserPassword == _password);
 

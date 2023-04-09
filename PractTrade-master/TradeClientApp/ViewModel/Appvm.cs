@@ -11,9 +11,9 @@ namespace TradeClientApp.ViewModel
 {
     internal class Appvm : BaseViewModel
     {
-        private ObservableCollection<Model.Database.Product> _products;
-
-        public ObservableCollection<Model.Database.Product> Products
+        private ObservableCollection<Model.Database.Tovar> _products;
+      
+        public ObservableCollection<Model.Database.Tovar> Products
         {
 
             get => _products;
@@ -25,21 +25,20 @@ namespace TradeClientApp.ViewModel
             }
 
         }
-
-       
         private void LoadData()
         {
-            using(TradeDBEntities1 db = new TradeDBEntities1())
+            using(TradeDBEntities db = new TradeDBEntities())
             {
-                var userList = db.Product.ToList();
+                var productList = db.Tovar.ToList();
+                foreach (var product in productList) { _products.Add(product); }
+
             }
-            
 
         }
         private void Initilize()
         {
             Products = new
-            ObservableCollection<Model.Database.Product>();
+            ObservableCollection<Model.Database.Tovar>();
         }
 
         public Appvm()

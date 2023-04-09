@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3a5bbef14f63430d82b53eeafb4ba904" Name="Diagram1">
+        <EntityTypeShape EntityType="TradeDBModel.Category" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.City" Width="1.5" PointX="1.5" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Manufacturer" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Order" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.PickupPoint" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Product" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Provider" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Role" Width="1.5" PointX="0.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Status" Width="1.5" PointX="0.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Street" Width="1.5" PointX="1.5" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Tovar" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.TovarName" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Unit" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.User" Width="1.5" PointX="3" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.UserInfo" Width="1.5" PointX="0.75" PointY="24.5" IsExpanded="true" />
+        <AssociationConnector Association="TradeDBModel.FK__Product__Product__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__PickupPoin__City__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Tovar__TovarManu__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Order__OrderInfo__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Order__OrderPick__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Order__OrderStat__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__PickupPoi__Stree__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Product__Product__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Product__Product__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Tovar__TovarProv__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__User__UserRole__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__Tovar__TovarName__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK__User__UserInfo__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.OrderProduct" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -66,32 +66,65 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Database\Category.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\City.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\Manufacturer.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\Database\Order.cs">
-      <DependentUpon>TradeModel.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\PickupPoint.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Database\Product.cs">
-      <DependentUpon>TradeModel.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\Provider.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Database\Role.cs">
-      <DependentUpon>TradeModel.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Database\TradeModel.Context.cs">
+    <Compile Include="Model\Database\Status.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\Street.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\Tovar.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\TovarName.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\TradeDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TradeModel.Context.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Database\TradeModel.cs">
+    <Compile Include="Model\Database\TradeDBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TradeModel.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Database\TradeModel.Designer.cs">
+    <Compile Include="Model\Database\TradeDBModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TradeModel.edmx</DependentUpon>
+      <DependentUpon>TradeDBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\Unit.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Database\User.cs">
-      <DependentUpon>TradeModel.tt</DependentUpon>
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\UserInfo.cs">
+      <DependentUpon>TradeDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\Appvm.cs" />
     <Compile Include="ViewModel\AuthorizationViewModel.cs" />
@@ -133,12 +166,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Model\Database\TradeModel.edmx">
+    <EntityDeploy Include="Model\Database\TradeDBModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TradeModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>TradeDBModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Model\Database\TradeModel.edmx.diagram">
-      <DependentUpon>TradeModel.edmx</DependentUpon>
+    <None Include="Model\Database\TradeDBModel.edmx.diagram">
+      <DependentUpon>TradeDBModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -152,16 +185,17 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Content Include="Model\Database\TradeModel.Context.tt">
+    <Content Include="Model\Database\TradeDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TradeModel.edmx</DependentUpon>
-      <LastGenOutput>TradeModel.Context.cs</LastGenOutput>
+      <DependentUpon>TradeDBModel.edmx</DependentUpon>
+      <LastGenOutput>TradeDBModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Model\Database\TradeModel.tt">
+    <Content Include="Model\Database\TradeDBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TradeModel.edmx</DependentUpon>
-      <LastGenOutput>TradeModel.cs</LastGenOutput>
+      <DependentUpon>TradeDBModel.edmx</DependentUpon>
+      <LastGenOutput>TradeDBModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

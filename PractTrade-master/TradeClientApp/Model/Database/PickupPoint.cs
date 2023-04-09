@@ -12,28 +12,23 @@ namespace TradeClientApp.Model.Database
     using System;
     using System.Collections.Generic;
     
-    public partial class Product
+    public partial class PickupPoint
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Product()
+        public PickupPoint()
         {
             this.Order = new HashSet<Order>();
         }
     
-        public string ProductArticle { get; set; }
-        public int ProductTovar { get; set; }
-        public int ProductMeasurementUnit { get; set; }
-        public decimal ProductCost { get; set; }
-        public Nullable<byte> ProductMaximumDiscountAmount { get; set; }
-        public int ProductCategory { get; set; }
-        public Nullable<byte> ProductDiscountAmount { get; set; }
-        public int ProductQuantityInStock { get; set; }
-        public byte[] ProductPhoto { get; set; }
+        public int PickupPointID { get; set; }
+        public int IndexPickupPoint { get; set; }
+        public int City { get; set; }
+        public int Street { get; set; }
+        public int House { get; set; }
     
-        public virtual Category Category { get; set; }
-        public virtual Tovar Tovar { get; set; }
-        public virtual Unit Unit { get; set; }
+        public virtual City City1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Order { get; set; }
+        public virtual Street Street1 { get; set; }
     }
 }

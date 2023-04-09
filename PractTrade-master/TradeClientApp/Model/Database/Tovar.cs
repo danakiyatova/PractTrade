@@ -12,28 +12,24 @@ namespace TradeClientApp.Model.Database
     using System;
     using System.Collections.Generic;
     
-    public partial class Product
+    public partial class Tovar
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Product()
+        public Tovar()
         {
-            this.Order = new HashSet<Order>();
+            this.Product = new HashSet<Product>();
         }
     
-        public string ProductArticle { get; set; }
-        public int ProductTovar { get; set; }
-        public int ProductMeasurementUnit { get; set; }
-        public decimal ProductCost { get; set; }
-        public Nullable<byte> ProductMaximumDiscountAmount { get; set; }
-        public int ProductCategory { get; set; }
-        public Nullable<byte> ProductDiscountAmount { get; set; }
-        public int ProductQuantityInStock { get; set; }
-        public byte[] ProductPhoto { get; set; }
+        public int TovarID { get; set; }
+        public int TovarName { get; set; }
+        public int TovarManufacturer { get; set; }
+        public int TovarProvider { get; set; }
+        public string TovarDescription { get; set; }
     
-        public virtual Category Category { get; set; }
-        public virtual Tovar Tovar { get; set; }
-        public virtual Unit Unit { get; set; }
+        public virtual Manufacturer Manufacturer { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Order> Order { get; set; }
+        public virtual ICollection<Product> Product { get; set; }
+        public virtual Provider Provider { get; set; }
+        public virtual TovarName TovarName1 { get; set; }
     }
 }
